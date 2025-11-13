@@ -6,7 +6,7 @@ if(isset($_POST['step2btn'])){
  $a=$_POST['num'];
  $b=$_POST['address'];
 
- $conn=mysqli_connect("localhost","root","","form");
+ $conn=mysqli_connect("db4free.net","localhost","root","","form",3306);
  $up="update formtbl set mobile='$a',city='$b' where id=$lastid";
 
  if(mysqli_query($conn,$up)){
