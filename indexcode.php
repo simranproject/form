@@ -6,7 +6,7 @@ if(isset($_POST['stepbtn'])){
     $b=$_POST['middle_name'];
     $c=$_POST['last_name'];
     
-    $conn=mysqli_connect("localhost", "root", "your_password","form");
+    $conn=mysqli_connect("localhost", "root", "simran","form");
     $ins="insert into formtbl(first_name,middle_name,last_name)values('$a','$b','$c')";
     if(mysqli_query($conn,$ins)){
 
