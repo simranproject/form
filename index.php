@@ -15,11 +15,16 @@
             background-size:cover;
 
         }
+        .form1{
+             height:400px;
+            width: 300px;
+            background-color: black;
+            opacity: 70%;
+        }
         .form{
             height:400px;
             width: 300px;
             border:1px solid black;
-            opacity: 70%;
             background-color: white;
             font-size:20px;
         }
@@ -40,7 +45,9 @@
     </style>
 </head>
 <body>
+    <div class="form1">
  <div class="form">
+    
     <h1><b>Fill this form</b></h1>
     
     <form action="indexcode.php" method="post">
@@ -49,6 +56,7 @@
         Last name<input type="text" name="last_name"><br><br><br>
         <button name="stepbtn">Next Page</button>
     </form>
+    </div>
     </div>
 </body>
 </html>
